@@ -30,6 +30,12 @@ header {
   color: var(--color-accent2);
 }
 
+header, main, footer {
+  max-width: 1200px;
+  margin-inline: auto;
+  width: 100%;
+}
+
 main {
   display: grid;
   grid-template-areas:
@@ -64,12 +70,12 @@ nav a {
 .product {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
 }
 
 .product-img {
   max-width: 200px;
+  align-items: center;
   height: auto;
 }
 
