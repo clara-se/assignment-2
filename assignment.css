@@ -1,3 +1,11 @@
+:root {
+  --color-bg: #F5DD90;
+  --color-text: #324376;
+  --color-accent: #F68E5F;
+  --color-accent2: #F76C5E;
+  --color-muted: #586BA4;
+}
+
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: rgb(194, 114, 23);
