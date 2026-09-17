@@ -53,3 +53,16 @@ footer {
   padding:10 px;
   color:rgb(179, 0, 255);
 }
+
+@media (min-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "content sidebar1"
+      "content sidebar2";
+  }
+  .hero-content { grid-area: content; }
+  .sidebar1 { grid-area: sidebar1; }
+  .sidebar2 { grid-area: sidebar2; }
+}
