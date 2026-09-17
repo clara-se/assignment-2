@@ -11,6 +11,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.5;
+  max-width: 100%;
 }
 
 h1, h2, h3 {
@@ -31,8 +32,24 @@ header {
 
 main {
   display: grid;
-  gap: var(--space-lg);
+  grid-template-areas:
+    "hero"
+    "features"
+    "how-it-works"
+    "impact"
+    "join";
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 30px;
 }
+
+.hero { grid-area: hero; }
+.features { grid-area: features; }
+.how-it-works { grid-area: how-it-works; }
+.impact { grid-area: impact; }
+.join { grid-area: join; }
 
 nav {
   display: flex;
