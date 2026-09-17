@@ -1,6 +1,6 @@
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: rgb(158, 222, 250);
+  background-color: rgb(194, 114, 23);
   color:black;
   line-height: 1.5;
 }
@@ -25,11 +25,14 @@ nav {
   gap:30px ;
 }
 
-.hero {
+.product {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap:20px ;
-  padding: 10px 20px;
+}
+.product-img {
+  max-width: 200px;
+  height: auto;
 }
 
 .features {
