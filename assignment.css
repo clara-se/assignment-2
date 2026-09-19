@@ -8,6 +8,10 @@
   --color-accent: #F68E5F;
   --color-accent2: #F76C5E;
   --color-muted: #586BA4;
+
+  --space-sm: 0.625rem;
+  --space-md: 1.25rem;
+  --space-lg: 1.875rem;
 }
 
 body {
@@ -26,7 +30,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
+  padding: var(--space-md);
 }
 
 .brand h1 {
@@ -48,8 +52,8 @@ main {
     "how-it-works"
     "impact"
     "join";
-  gap: 1.25rem;
-  padding-inline: 1.875rem;
+  gap: var(--space-md);
+  padding-inline: var(--space-lg);
 }
 
 .hero { grid-area: hero; }
@@ -60,18 +64,24 @@ main {
 
 nav {
   display: flex;
-  gap: 1.875rem;
+  gap: var(--space-lg);
 }
 
 nav a {
   color: var(--color-accent);
   text-decoration: none;
+  transition: color 200ms;
+}
+
+nav a:hover {
+  color: var(--color-accent2);
+  text-decoration: underline;
 }
 
 .product {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: var(--space-md);
 }
 
 .product-img {
@@ -85,8 +95,8 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 1.25rem;
-  padding: 0.625rem 1.25rem;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
 }
 
 img {
@@ -97,21 +107,28 @@ img {
 .join form {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: var(--space-md);
   max-width: 400px;
 }
 
 .join button[type="submit"] {
   background-color: var(--color-accent);
-  color: white;
+  color: var(--color-bg);
   border: none;
-  padding: 0.625rem 1.25rem;
+  padding: var(--space-sm) var(--space-md);
   border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 200ms, transform 200ms;
+}
+
+.join button[type="submit"]:hover {
+  background-color: var(--color-accent2);
+  transform: translateY(-2px);
 }
 
 footer {
   text-align: center;
-  padding: 0.625rem;
+  padding: var(--space-sm);
   color: var(--color-muted);
 }
 
