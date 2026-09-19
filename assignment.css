@@ -28,9 +28,11 @@ h1, h2, h3 {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: var(--space-md);
+  gap: var(--space-sm);
 }
 
 .brand h1 {
@@ -64,8 +66,10 @@ main {
 
 nav {
   display: flex;
-  gap: var(--space-lg);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
 }
+
 
 nav a {
   color: var(--color-accent);
@@ -136,4 +140,8 @@ footer {
   .product {
     flex-direction: row;
   }
+  nav {
+    gap: var(--space-lg);
+  }
 }
+
